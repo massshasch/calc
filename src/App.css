@@ -1,0 +1,51 @@
+.container {
+  max-width: 200px;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+  'i i i i'
+  'i i i i'
+  'ce strannoe percent division'
+  'seven eight nine mult'
+  'four five six minus'
+  'one two three plus'
+  'zero zero comma eq';
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  height: 250px;
+}
+
+button,
+input {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+}
+
+.button-gray {
+  background-color: gray;
+}
+
+
+.button-orange {
+  background-color: orange;
+}
+
+.button-light-gray {
+  background-color: darkgray;
+}
+
+.input {
+  background-color: gray;
+  grid-area: i;
+}
+
+.zero {
+  grid-area: zero;
+}
